@@ -32,6 +32,8 @@
     "wiredep": "^2.0.0"
   },
   "scripts": {
-    "postinstall"   : "bower install"
+    "gulp"          : "gulp",
+    "gulp:watch"    : "gulp watch",
+    "gulp:serve"    : "gulp serve"
   }
 }
