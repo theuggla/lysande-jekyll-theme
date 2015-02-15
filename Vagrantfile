@@ -18,7 +18,7 @@ Vagrant.configure(2) do |config|
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
   config.vm.network :forwarded_port, host: 9090, guest: 9090
-  config.vm.network :forwarded_port, host: 9091, guest: 9091
+  config.vm.network :forwarded_port, host: 35729, guest: 35729
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
@@ -68,6 +68,8 @@ Vagrant.configure(2) do |config|
 
     sudo apt-get install -y npm
     sudo apt-get install -y git
+
+    sudo su -c "gem install sass"
    SHELL
 
 
