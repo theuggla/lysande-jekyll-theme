@@ -1,7 +1,4 @@
-
-
 {
-
   "private": true,
   "engines": {
     "node": ">=0.10.0"
@@ -19,26 +16,28 @@
   },
 
   "scripts": {
-    "postinstall"   : "bower install",
+    "post...install"   : "bower install",
     
-    "serve"         : "http-server -p 9090 dist/",
-    "livereload"    : "live-reload --port 9091 dist/",
+    "serve"         : "http-server -p 9090 dev/",
+    "livereload"    : "live-reload --port 9091 dev/",
 
-    "browserify"    : "mkdir -p dist/scripts && browserify app/scripts/main.js > dist/scripts/main.js",
+    "browserify"    : "mkdir -p dev/scripts && browserify app/scripts/main.js > dev/scripts/main.js",
     "lint"          : "jshint app/scripts/*.js",
-    "sass"          : "mkdir -p dist/styles && node-sass app/styles/* -r -o dist/styles/",
+    "sass"          : "mkdir -p dev/styles && node-sass app/styles/* -r -o dev/styles/",
 
-    "build:scripts" : "npm run browserify", 
-    "watch:scripts" : "watch 'npm run build:scripts' app/scripts/",
+    "devel:scripts"  : "npm run browserify",
+    "build:scripts" : "", 
+    "watch:scripts" : "watch 'npm run devel:scripts' app/scripts/",
 
     "build:markup"  : "",
     "watch:markup"  : "",
 
-    "build:styles"  : "npm run sass",
-    "watch:styles"  : "watch 'npm run build:styles' app/styles/",
+    "devel:styles"  : "npm run sass",
+    "build:styles"  : "",
+    "watch:styles"  : "watch 'npm run devel:styles' app/styles/",
 
     
-    "build"         : "npm run build:scripts",
+    "build"         : "npm run build:scripts && npm run build:markup && npm run build:styles",
     "watch"         : "parallelshell 'npm run watch:scripts' 'npm run livereload' 'npm run serve' 'npm run watch:styles' 'npm run watch:markup'",
 
     "prebuild"      : "npm run lint",

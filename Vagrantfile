@@ -67,7 +67,7 @@ Vagrant.configure(2) do |config|
     sudo ln -s /usr/bin/nodejs /usr/bin/node
 
     sudo apt-get install -y npm
-    #sudo apt-get install -y git
+    sudo apt-get install -y git
    SHELL
 
 
