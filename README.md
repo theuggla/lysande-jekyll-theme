@@ -7,7 +7,7 @@ Make sure you have the following installed on your system:
 * Virtual Box [https://www.virtualbox.org/](https://www.virtualbox.org/)
 * Vagrant [https://www.vagrantup.com/](https://www.vagrantup.com/)
 
-Clone this repro to the location you want to have the project. 
+Clone (`git clone https://github.com/1dv022/js-boilerplate.git`) this repro to the location you want the project to live. 
 
 Start the virtual machine using:
 `vagrant up`
@@ -27,8 +27,8 @@ You find all prepered tasks in package.json under "scripts".
 The most relevant are:
 * `npm run gulp` Builds the system clean into the "dist"-folder
 * `npm run gulo:build` Builds the system into the "dist"-folder
-* `npm run gulp:watch` Watches for changes to .html and .scss
-* `npm run gulp:serve` Watches for changes and do browserify tasks.
+* `npm run gulp:watch` Watches for changes to .html, .scss and .js
+
 
 ## Daily workflow
 Start out by `vagrant up` your machine and ssh into it (`vagrant ssh`). Change directory to `cd /vagrant`.
