@@ -48,3 +48,7 @@ The most relevant are:
 * `npm run gulp` Builds the system clean into the "dist"-folder
 * `npm run gulo:build` Builds the system into the "dist"-folder
 * `npm run gulp:watch` Watches for changes to .html, .scss and .js
+
+## ::TODO
+* Add uglyfi
+* Add minfying etc.
