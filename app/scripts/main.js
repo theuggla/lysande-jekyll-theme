@@ -1,5 +1,5 @@
 /* jshint devel:true */
 
-var i = 1000;
+var i = 90;
 
 console.log(i);

@@ -22,6 +22,16 @@ gulp.task('jshint', function () {
     .pipe($.jshint.reporter('fail'));
 });
 
+gulp.task('scripts', function() {
+    // Single entry point to browserify 
+    gulp.src('app/scripts/**/*.js')
+        .pipe($.browserify({
+          insertGlobals : true
+        }))
+        .pipe(gulp.dest('./dist/scripts'))
+});
+
+
 gulp.task('html', ['styles'], function () {
   var assets = $.useref.assets({searchPath: '{.tmp,app}'});
 
@@ -101,10 +111,13 @@ gulp.task('watch', ['connect'], function () {
   ]).on('change', $.livereload.changed);
 
   gulp.watch('app/styles/**/*.scss', ['styles']);
+  gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('bower.json', ['wiredep']);
+
+  console.log('Watching \'./app/\', abort by: ctrl+c');
 });
 
-gulp.task('build', ['jshint', 'html', 'images', 'extras'], function () {
+gulp.task('build', ['jshint', 'html', 'images', 'extras', 'scripts'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

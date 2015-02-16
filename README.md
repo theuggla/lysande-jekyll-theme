@@ -18,12 +18,14 @@ SSH into the machine using:
 Change directory to:
 `cd /vagrant`
 
-Install all dependencies (incl. Bower dependencies):
+Install all dependencies (incl. bower dependencies):
 `npm install`
 
 ## Running tasks
 You find all prepered tasks in package.json under "scripts".
 
 The most relevant are:
-* `npm run build` Builds the system into the "dist"-folder
-* `npm run watch` Watches for changes and do browserify tasks.
+* `npm run gulp` Builds the system clean into the "dist"-folder
+* `npm run gulo:build` Builds the system into the "dist"-folder
+* `npm run gulp:watch` Watches for changes to .html and .scss
+* `npm run gulp:serve` Watches for changes and do browserify tasks.
