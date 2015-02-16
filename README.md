@@ -8,6 +8,7 @@ Make sure you have the following installed on your system:
 * Vagrant [https://www.vagrantup.com/](https://www.vagrantup.com/)
 
 Now, do:
+
 1. Clone (`git clone https://github.com/1dv022/js-boilerplate.git`) this repro to the location you want the project to live. Note that git clone will create the directory `js-boilerplate` for you if you do not specify otherwise. 
 
 2. Change directory to `cd js-boilerplate`. 
@@ -25,7 +26,7 @@ Now, do:
 
 2. Start watching for changes in the app-directory by `npm run gulp:watch`. Now you have a small webserver serving your application on the adress: `http://localhost:9090`, try it out in the browser of your choise.
 
-3. If you make a change in an html-, css- or js-file the tasks for that file will run and the web page in your browser will autoreload.
+3. Fire up the IDE of your choise (Webstorm, sublime etc.) and open the files in the `js-boilerplate`-folder or `js-boilerplate/app`-folder and start editing your application. If you make a change in an html-, css- or js-file the tasks for that file will run and the web page in your browser will autoreload.
 
 4. When you are done simply `ctrl+c` to abort the watch, `exit` to  exit the ssh-session and do a `vagrant halt` to stop the machine or `vagrant suspend` to only suspend it.
 
