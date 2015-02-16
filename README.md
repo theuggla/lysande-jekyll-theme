@@ -1,6 +1,17 @@
 # JS Boilerplate
 
-This is a boilerplate to be used for JS-assignments in the course. 
+This is a boilerplate to be used for JS-assignments in the course. The virtual machine (Ubuntu 32bit) will have the following default installed:
+* node.js
+* npm
+* git 
+
+Upon `npm install` the packages will be installed:
+* bower
+* browserify
+* gulp
+* sass
+* jshint
+* ...
 
 ## Install
 Make sure you have the following installed on your system:
