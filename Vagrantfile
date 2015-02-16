@@ -69,7 +69,6 @@ Vagrant.configure(2) do |config|
     sudo apt-get install -y npm
     sudo apt-get install -y git
 
-    sudo su -c "gem install sass"
    SHELL
 
 
