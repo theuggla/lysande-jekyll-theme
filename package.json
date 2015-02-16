@@ -36,6 +36,6 @@
     "gulp"          : "gulp",
     "gulp:watch"    : "gulp watch",
     "gulp:serve"    : "gulp serve",
-    "gulp:build"    : "gulp serve"
+    "gulp:build"    : "gulp build"
   }
 }

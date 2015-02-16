@@ -7,19 +7,17 @@ Make sure you have the following installed on your system:
 * Virtual Box [https://www.virtualbox.org/](https://www.virtualbox.org/)
 * Vagrant [https://www.vagrantup.com/](https://www.vagrantup.com/)
 
-Clone (`git clone https://github.com/1dv022/js-boilerplate.git`) this repro to the location you want the project to live. 
+Clone (`git clone https://github.com/1dv022/js-boilerplate.git`) this repro to the location you want the project to live. Note that git clone will create the directory `js-boilerplate` for you if you do not specify otherwise. 
 
-Start the virtual machine using:
-`vagrant up`
+Change directory to `cd js-boilerplate`. 
 
-SSH into the machine using:
-`vagrant ssh`
+Start the virtual machine using `vagrant up` (Will take a couple of minutes)
 
-Change directory to:
-`cd /vagrant`
+SSH into the machine using  `vagrant ssh`
 
-Install all dependencies (incl. bower dependencies):
-`npm install`
+Change directory to `cd /vagrant`
+
+Install all dependencies (incl. bower dependencies) `npm install` (Note: will take 5-10 minutes)
 
 ## Running tasks
 You find all prepered tasks in package.json under "scripts".
@@ -33,7 +31,7 @@ The most relevant are:
 ## Daily workflow
 Start out by `vagrant up` your machine and ssh into it (`vagrant ssh`). Change directory to `cd /vagrant`.
 
-Start watching for changes in the app-directory by `npm run gulp:watch`. Now you have a small webserver serving your application on the adress: `http://localhost:9090`, try it out in the browser of your choise. 
+Start watching for changes in the app-directory by `npm run gulp:watch`. Now you have a small webserver serving your application on the adress: `http://localhost:9090`, try it out in the browser of your choise.
 
 If you make a change in an html-, css- or js-file the tasks for that file will run and the web page in your browser will autoreload.
 
