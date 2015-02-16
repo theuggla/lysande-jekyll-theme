@@ -7,17 +7,18 @@ Make sure you have the following installed on your system:
 * Virtual Box [https://www.virtualbox.org/](https://www.virtualbox.org/)
 * Vagrant [https://www.vagrantup.com/](https://www.vagrantup.com/)
 
-Clone (`git clone https://github.com/1dv022/js-boilerplate.git`) this repro to the location you want the project to live. Note that git clone will create the directory `js-boilerplate` for you if you do not specify otherwise. 
+Now, do:
+* Clone (`git clone https://github.com/1dv022/js-boilerplate.git`) this repro to the location you want the project to live. Note that git clone will create the directory `js-boilerplate` for you if you do not specify otherwise. 
 
-Change directory to `cd js-boilerplate`. 
+* Change directory to `cd js-boilerplate`. 
 
-Start the virtual machine using `vagrant up` (Will take a couple of minutes)
+* Start the virtual machine using `vagrant up` (Will take a couple of minutes)
 
-SSH into the machine using  `vagrant ssh`
+* SSH into the machine using  `vagrant ssh`
 
-Change directory to `cd /vagrant`
+* Change directory to `cd /vagrant`
 
-Install all dependencies (incl. bower dependencies) `npm install` (Note: will take 5-10 minutes)
+* Install all dependencies (incl. bower dependencies) `npm install` (Note: will take 5-10 minutes)
 
 ## Running tasks
 You find all prepered tasks in package.json under "scripts".
