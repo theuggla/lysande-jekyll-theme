@@ -17,8 +17,8 @@ Vagrant.configure(2) do |config|
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
-  config.vm.network :forwarded_port, host: 9090, guest: 9090
-  config.vm.network :forwarded_port, host: 35729, guest: 35729
+  # config.vm.network :forwarded_port, host: 9090, guest: 9090
+  # config.vm.network :forwarded_port, host: 35729, guest: 35729
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
@@ -62,6 +62,14 @@ Vagrant.configure(2) do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
+  
+    gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+    
+    curl -L https://get.rvm.io | bash -s stable --ruby
+    
+    source /home/vagrant/.rvm/scripts/rvm
+
+    gem install jekyll
 
     sudo apt-get install -y nodejs
     sudo ln -s /usr/bin/nodejs /usr/bin/node
