@@ -67,9 +67,7 @@ Vagrant.configure(2) do |config|
     
     curl -L https://get.rvm.io | bash -s stable --ruby
     
-    source /home/vagrant/.rvm/scripts/rvm
-
-    gem install jekyll
+    source /usr/local/rvm/scripts/rvm
 
     sudo apt-get install -y nodejs
     sudo ln -s /usr/bin/nodejs /usr/bin/node

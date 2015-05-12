@@ -1,17 +1,11 @@
 # JS Boilerplate
 
-This is a boilerplate to be used for JS-assignments in the course. The virtual machine (Ubuntu 32bit) will have the following default installed:
+This is a boilerplate to be used for Jekyll-assignments in the course. The virtual machine (Ubuntu 32bit) will have the following default installed:
 * node.js
 * npm
 * git 
-
-Upon `npm install` the packages will be installed:
-* bower
-* browserify
-* gulp
-* sass
-* jshint
-* ...
+* ruby (latest stable)
+* jekyll
 
 ## Install
 Make sure you have the following installed on your system:
@@ -20,17 +14,17 @@ Make sure you have the following installed on your system:
 
 Now, do:
 
-1. Clone (`git clone https://github.com/1dv022/js-boilerplate.git`) this repro to the location you want the project to live. Note that git clone will create the directory `js-boilerplate` for you if you do not specify otherwise. 
+1. Pull (`git pull https://github.com/1dv022/jekyll-boilerplate.git`) into your existing repo. Make sure you are in the root of your repo.
 
-2. Change directory to `cd js-boilerplate`. 
+2. Start the virtual machine using `vagrant up` (Will take 15-30 minutes. Ignore red command line statements and warnings. Lean back and feel like an l33t hax0r as the commands scroll by.)
 
-3. Start the virtual machine using `vagrant up` (Will take a couple of minutes)
+3. SSH into the machine using  `vagrant ssh`
 
-4. SSH into the machine using  `vagrant ssh`
+4. Change directory to `cd /vagrant`
 
-5. Change directory to `cd /vagrant`
+5. Install jekyll using `gem install jekyll`
 
-6. Install all dependencies (incl. bower dependencies) `npm install` (Note: will take 5-10 minutes)
+6. Create an scaffolded jekyll project using `jekyll new . --force` (`.` to install in the root directory (`/vagrant`), and `--force` to ignore that the directory is not empty)
 
 ## Daily workflow
 1. Start out by `vagrant up` your machine and ssh into it (`vagrant ssh`). Change directory to `cd /vagrant`.
