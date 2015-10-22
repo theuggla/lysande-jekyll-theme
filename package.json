@@ -2,7 +2,6 @@
   "name": "@1dv022/jekyll-boilerplate",
   "version": "1.0.0",
   "homepage": "https://coursepress.lnu.se/kurs/klientbaserad-webbprogrammering/",
-
   "contributors": [
     {
       "name": "Johan Leitet",
@@ -22,21 +21,23 @@
     }
   ],
   "license": "CC-BY-4.0",
-  "repository" :
-  { "type" : "git",
-    "url" : "https://github.com/1dv022/jekyll-boilerplate"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1dv022/jekyll-boilerplate"
   },
-  "engines" : { "node" : ">=4.0.0" },
-  "dependencies": {
-    },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {},
   "devDependencies": {
-   
+    "nodemon": "^1.7.3"
   },
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "mocha --recursive ./test",
-    "postinstall": "bundle install"
+    "postinstall": "bundle install",
+    "watch":"bundle exec jekyll serve --source ./src --force_polling"
   }
 }
