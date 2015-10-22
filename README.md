@@ -4,7 +4,7 @@ This is a boilerplate to be used for Jekyll-assignments in the course. The virtu
 * node.js (Latest stable)
 * npm
 * git 
-* jekyll (using the gem github-pages)
+* bundler
 
 ## Install
 Make sure you have the following installed on your system:
@@ -21,15 +21,17 @@ Now, do:
 
 4. Change directory to `cd /vagrant`
 
-5. Make sure jekyll is properly installed `jekyll --version`
+5. Install depencies and github-pages `npm install` (Will run bundle install postinstallation)
 
-6. Create an scaffolded jekyll project using `jekyll new . --force` (`.` to install in the root directory (`/vagrant`), and `--force` to ignore that the directory is not empty)
+6. Create an scaffolded jekyll project using `jekyll new src` (`src` to install in the directory (`/vagrant/src`)
 
 ## Daily workflow
 1. Start out by `vagrant up` your machine and ssh into it (`vagrant ssh`). Change directory to `cd /vagrant`.
 
-2. Start watching for changes in the app-directory by `npm run gulp:watch`. Now you have a small webserver serving your application on the adress: `http://localhost:9090`, try it out in the browser of your choise.
+2. Start watching for changes in the jekyll files. `npm run watch`
 
-3. Fire up the IDE of your choise (Webstorm, sublime etc.) and open the files in the `js-boilerplate`-folder or `js-boilerplate/app`-folder and start editing your application. If you make a change in an html-, css- or js-file the tasks for that file will run and the web page in your browser will auto reload.
+3. Open up a browser and visit the url `http://localhost:4000`
 
-4. When you are done simply `ctrl+c` to abort the watch, `exit` to  exit the ssh-session and do a `vagrant halt` to stop the machine or `vagrant suspend` to only suspend it.
+4. Fire up the IDE of your choise (Webstorm, sublime etc.) and open the files in the `src`-folder and start editing your site. When a file is saved the watch-script will auto generate the site. (including sass-files)
+
+5. When you are done simply `ctrl+c` to abort the watch, `exit` to  exit the ssh-session and do a `vagrant halt` to stop the machine or `vagrant suspend` to only suspend it.
