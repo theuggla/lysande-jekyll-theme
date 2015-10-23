@@ -1,10 +1,17 @@
 # Jekyll Boilerplate
 
 This is a boilerplate to be used for Jekyll-assignments in the course. The virtual machine (Ubuntu 32bit) will have the following (relevant) packages installed:
+
+From start:
 * node.js (Latest stable)
 * npm
 * git 
 * bundler
+
+From npm install:
+* jekyll (via bundler)
+* scss (via bundler)
+
 
 ## Install
 Make sure you have the following installed on your system:
