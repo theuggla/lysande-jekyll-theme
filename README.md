@@ -22,7 +22,7 @@ Now, do:
 
 1. Pull (`git pull https://github.com/1dv022/jekyll-boilerplate.git`) into your existing repo. Make sure you are in the root of your repo.
 
-2. Start the virtual machine using `vagrant up` (Will take 15-30 minutes. Ignore red command line statements and warnings.)
+2. Start the virtual machine using `vagrant up` (May take 10-30 minutes. Ignore red command line statements and warnings.)
 
 3. SSH into the machine using  `vagrant ssh`
 
