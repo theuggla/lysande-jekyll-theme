@@ -22,7 +22,7 @@ Now, do:
 
 1. Pull (`git pull https://github.com/1dv022/jekyll-boilerplate.git`) into your existing repo. Make sure you are in the root of your repo.
 
-2. Start the virtual machine using `vagrant up` (May take 10-30 minutes. Ignore red command line statements and warnings.)
+2. Start the virtual machine using `vagrant up` (May take 10-30 minutes this first time. Ignore red command line statements and warnings.)
 
 3. SSH into the machine using  `vagrant ssh`
 
@@ -39,6 +39,6 @@ Now, do:
 
 3. Open up a browser and visit the url `http://localhost:4000`
 
-4. Fire up the IDE of your choise (Webstorm, sublime etc.) and open the files in the `src`-folder and start editing your site. When a file is saved the watch-script will auto generate the site. (including sass-files)
+4. Fire up the IDE of your choise (Webstorm, sublime etc.) and open the files in the `src`-folder and start editing your site. When a file is saved the watch-script will auto generate the site. (including sass-files but not true for _config.yml)
 
 5. When you are done simply `ctrl+c` to abort the watch, `exit` to  exit the ssh-session and do a `vagrant halt` to stop the machine or `vagrant suspend` to only suspend it.
