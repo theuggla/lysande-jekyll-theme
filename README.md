@@ -28,7 +28,7 @@ Now, do:
 
 4. Change directory to `cd /vagrant`
 
-5. Install depencies and github-pages `npm install` (Will run bundle install postinstallation)
+5. Install depencies and github-pages `npm install` (Will run bundle install postinstallation - if problem at windows also run "bundle install" )
 
 6. Create an scaffolded jekyll project using `jekyll new src` (`src` to install in the directory (`/vagrant/src`)
 
