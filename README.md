@@ -1,6 +1,6 @@
 # Jekyll Boilerplate
 
-This is a boilerplate to be used for Jekyll-assignments in the course. The virtual machine (Ubuntu 32bit) will have the following (relevant) packages installed:
+This is a boilerplate to be used for Jekyll-assignments in the course. The virtual machine (hashicorp/precise32) will have the following (relevant) packages installed:
 
 From start:
 * node.js (Latest stable)
