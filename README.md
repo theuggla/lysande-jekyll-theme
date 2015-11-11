@@ -1,6 +1,6 @@
 # Jekyll Boilerplate
 
-This is a boilerplate to be used for Jekyll-assignments in the course. The virtual machine (Ubuntu 32bit) will have the following (relevant) packages installed:
+This is a boilerplate to be used for Jekyll-assignments in the course. The virtual machine (hashicorp/precise32) will have the following (relevant) packages installed:
 
 From start:
 * node.js (Latest stable)
@@ -24,13 +24,15 @@ Now, do:
 
 2. Start the virtual machine using `vagrant up` (May take 10-30 minutes this first time. Ignore red command line statements and warnings.)
 
-3. SSH into the machine using  `vagrant ssh`
+3. SSH into the machine using  `vagrant ssh` (Now you are connected to the virtual machine. Every command is now executed in the virtual mashine. If you do `exit` you leave the virtual machine and are back on your local computer.)
 
 4. Change directory to `cd /vagrant`
 
-5. Install depencies and github-pages `npm install` (Will run bundle install postinstallation)
+5. Install depencies and github-pages `npm install`
 
-6. Create an scaffolded jekyll project using `jekyll new src` (`src` to install in the directory (`/vagrant/src`)
+6. Do a `bundle install`
+
+7. Create an scaffolded jekyll project using `jekyll new src` (`src` to install in the directory (`/vagrant/src`)
 
 ## Daily workflow
 1. Start out by `vagrant up` your machine and ssh into it (`vagrant ssh`). Change directory to `cd /vagrant`.
