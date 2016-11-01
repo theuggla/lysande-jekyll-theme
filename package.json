@@ -38,6 +38,6 @@
   "scripts": {
     "test": "mocha --recursive ./test",
     "postinstall": "bundle install",
-    "watch":"bundle exec jekyll serve --source ./src --force_polling"
+    "watch":"bundle exec jekyll serve --host=0.0.0.0 --source ./src --force_polling"
   }
 }
