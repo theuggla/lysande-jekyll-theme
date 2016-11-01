@@ -5,7 +5,7 @@ This is a boilerplate to be used for Jekyll-assignments in the course. The virtu
 From start:
 * node.js (Latest stable)
 * npm
-* git 
+* git
 * bundler
 
 From npm install:
@@ -26,16 +26,12 @@ Now, do:
 
 3. SSH into the machine using  `vagrant ssh` (Now you are connected to the virtual machine. Every command is now executed in the virtual mashine. If you do `exit` you leave the virtual machine and are back on your local computer.)
 
-4. Change directory to `cd /vagrant`
+4. Install depencies and github-pages `npm install`
 
-5. Install depencies and github-pages `npm install`
-
-6. Do a `bundle install`
-
-7. Create an scaffolded jekyll project using `jekyll new src` (`src` to install in the directory (`/vagrant/src`)
+5. Create an scaffolded jekyll project using `jekyll new src` (`src` to install in the directory (`/vagrant/src`)
 
 ## Daily workflow
-1. Start out by `vagrant up` your machine and ssh into it (`vagrant ssh`). Change directory to `cd /vagrant`.
+1. Start out by `vagrant up` your machine and ssh into it (`vagrant ssh`)
 
 2. Start watching for changes in the jekyll files. `npm run watch`
 
