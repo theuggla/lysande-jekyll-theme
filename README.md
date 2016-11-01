@@ -36,6 +36,7 @@ Now, do:
 2. Start watching for changes in the jekyll files. `npm run watch`
 
 3. Open up a browser and visit the url `http://localhost:4000`
+    To get the css working you have to make a change in the `/src/_config.yml`-file - Change `url: "http://example.com"` to `url: ""` to get the correct path.
 
 4. Fire up the IDE of your choise (Webstorm, sublime etc.) and open the files in the `src`-folder and start editing your site. When a file is saved the watch-script will auto generate the site. (including sass-files but not true for _config.yml)
 
