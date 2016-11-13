@@ -52,7 +52,7 @@ To be able to use the theme with the projects function, copy this into your _con
 collections:
   projects:
     categories: [example1, example2]
-´´´
+```
 
 Add the categories you are interested in, separated by commas, between the square brackets.
 
