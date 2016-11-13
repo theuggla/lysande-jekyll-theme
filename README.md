@@ -35,6 +35,7 @@ will appear in your header that links to that account.
 
 The suported usernames and the format for recording them in the config file are as follows:
 
+```yaml
 email: yourName
 twitter_username: yourName
 github_username: yourName
@@ -43,12 +44,15 @@ instagram_username: yourName
 facebook_username: yourName
 youtube_username: yourName
 pinterest_username: yourName
+```
 
 To be able to use the theme with the projects function, copy this into your _config.yml-file:
 
+```yaml
 collections:
   projects:
-    categories: []
+    categories: [example1, example2]
+´´´
 
 Add the categories you are interested in, separated by commas, between the square brackets.
 
@@ -57,7 +61,7 @@ To make use of the projects layout, add the following
 to each project's Front Matter:
 
 ```yaml
-category:
+category: example
 ```
 
 and supply one of the categories you have recorded in your config file.
@@ -87,7 +91,7 @@ comments: true
 To have a link to your page show up in the global navigation, make sure you make a page and add
 
 ```yaml
-title:
+title: Your Title
 ```
 
 to the page's Front Matter.
