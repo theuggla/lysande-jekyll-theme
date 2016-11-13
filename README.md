@@ -56,9 +56,9 @@ Add the categories you are interested in, separated by commas, between the squar
 To make use of the projects layout, add the following
 to each project's Front Matter:
 
----
+```yaml
 category:
----
+```
 
 and supply one of the categories you have recorded in your config file.
 
@@ -71,22 +71,24 @@ Your blog posts will be showcased on every page you give the blog layout, or dis
 The blog and post layouts comes with support for
 disqus comments. If you would like this enables, supply a disqus shortname for your site in the config file, like so:
 
+```yaml
 disqus_shortname: yourName
+```
 
 Then make sure your posts has a layout of 'post' and add comments to the Front Matter of the posts you would like the comments on, like so:
 
----
+```yaml
 comments: true
----
+```yaml
 
 
 ### Navigation
 
 To have a link to your page show up in the global navigation, make sure you make a page and add
 
----
+```yaml
 title:
----
+```
 
 to the page's Front Matter.
 
