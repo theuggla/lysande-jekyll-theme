@@ -4,13 +4,13 @@
 Add this line to your Jekyll site's Gemfile:
 
 ```ruby
-gem "lysande-jekyll-theme"
+gem "lysande"
 ```
 
 And add this line to your Jekyll site:
 
 ```yaml
-theme: lysande-jekyll-theme
+theme: lysande
 ```
 
 And then execute:
@@ -19,7 +19,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install lysande-jekyll-theme
+    $ gem install lysande
 
 ## Usage
 

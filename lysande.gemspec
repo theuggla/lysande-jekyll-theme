@@ -1,7 +1,7 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "lysande-jekyll-theme"
+  spec.name          = "lysande"
   spec.version       = "0.1.0"
   spec.authors       = ["Molly Arhammar"]
   spec.email         = ["mollyarhammar@gmail.com"]
