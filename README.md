@@ -29,11 +29,13 @@ navigation menu.
 It is intended to be used with a _projects folder, where markdown documents representing your projects can be stored.
 Without the _projects folder, it is possible to use it as a blog with _posts only.
 
+For sharing in line with Open Graph, include an image named 'share.png' in your /assets directory.
+
 ### _config.yml
-The theme supports usernames to various social media sites. If you add in any of these usernames in your confic file, an icon
+The theme supports usernames to various social media sites. If you add in any of these usernames in your config file, an icon
 will appear in your header that links to that account.
 
-The suported usernames and the format for recording them in the config file are as follows:
+The supported usernames and the format for recording them in the config file are as follows:
 
 ```yaml
 email: yourName
@@ -56,6 +58,12 @@ collections:
 
 Add the categories you are interested in, separated by commas, between the square brackets.
 
+To enable an rss feed to your site, add an rss flag in your config:
+
+```yaml
+rss: true
+```
+
 ### Projects
 To make use of the projects layout, add the following
 to each project's Front Matter:
@@ -67,13 +75,15 @@ category: example
 and supply one of the categories you have recorded in your config file.
 
 The projects will be displayed on any page you give the 'projects' layout, or otherwise accessible via site.projects,
-just as site.posts gives you access to your blog posts.
+just as site.posts gives you access to your blog posts. Anything you add to a page with the projects layout
+will be displayed on top of the projects posts, under the projects navigational menu.
 
 ### Blog
 
 Your blog posts will be showcased on every page you give the blog layout, or display them as you wish without this layout.
-The blog and post layouts comes with support for
-disqus comments. If you would like this enables, supply a disqus shortname for your site in the config file, like so:
+Anything you add to a page with the blog layout will be displayed on top of the blog posts.
+The blog and post layouts comes with support for disqus comments. If you would like this enables, supply a 
+disqus shortname for your site in the config file, like so:
 
 ```yaml
 disqus_shortname: yourName
@@ -92,10 +102,36 @@ To have a link to your page show up in the global navigation, make sure you make
 
 ```yaml
 title: Your Title
+menu: main
 ```
 
 to the page's Front Matter.
 
+
+### Sass
+
+The sass layouts available to import to your main.scss should you wish are the _base, that styles the main appearance
+of the site, the header and the footer. It is recommended that you also import the _menu for styling of the global
+navigation. If you opt to use the project and blog layout for displaying your projects and blog posts, the styles
+for them are included as _projects and _blog. The _responsive makes the site responsive.
+
+### Reference
+
+Full list of _sass as follows:
+
+@include '_base.scss'  --- basic styling
+@include '_menu.scss' --- global menu
+@include '_projects.scss' --- page that displays projects
+@include '_blog.scss' --- main blog page with links to blog posts
+@include '_responsive.scss' --- makes site responsive
+
+Full list of _layouts as follows:
+
+default   --- includes head, globalnav, footer, header
+post      --- based on default, includes post title and disqus support
+blog      --- based on default, includes all posts in _posts, a local nav list to all the posts and disqus comment count
+projects  --- based on default, includes all projects in _projects and a local nav list of categories if more
+categories than three and/or a small screen display
 
 
 ## Contributing
