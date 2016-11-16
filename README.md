@@ -1,6 +1,8 @@
 
 ## Installation
 
+### As a gem
+
 Add this line to your Jekyll site's Gemfile:
 
 ```ruby
@@ -21,6 +23,12 @@ Or install it yourself as:
 
     $ gem install lysande
 
+### From GitHub
+
+Make sure you have Jekyll installed. Fork this repository, pull it down on your computer,
+and start changing away in the files you want changed. It comes with all you need for a
+fully working site.
+
 ## Usage
 
 The theme comes with four layouts: default, post, projects and blog. It includes a header, footer and a global
@@ -29,7 +37,8 @@ navigation menu.
 It is intended to be used with a _projects folder, where markdown documents representing your projects can be stored.
 Without the _projects folder, it is possible to use it as a blog with _posts only.
 
-For sharing in line with Open Graph, include an image named 'share.png' in your /assets directory.
+For sharing in line with Open Graph, include the name for your image (including .png)
+in your config file under image, and place it in your /assets directory.
 
 ### _config.yml
 The theme supports usernames to various social media sites. If you add in any of these usernames in your config file, an icon
@@ -119,18 +128,18 @@ for them are included as _projects and _blog. The _responsive makes the site res
 
 Full list of _sass as follows:
 
-@include '_base.scss'  --- basic styling
-@include '_menu.scss' --- global menu
-@include '_projects.scss' --- page that displays projects
-@include '_blog.scss' --- main blog page with links to blog posts
-@include '_responsive.scss' --- makes site responsive
+1. @include '_base.scss'  --- basic styling
+2. @include '_menu.scss' --- global menu
+3. @include '_projects.scss' --- page that displays projects
+4. @include '_blog.scss' --- main blog page with links to blog posts
+5. @include '_responsive.scss' --- makes site responsive
 
 Full list of _layouts as follows:
 
-default   --- includes head, globalnav, footer, header
-post      --- based on default, includes post title and disqus support
-blog      --- based on default, includes all posts in _posts, a local nav list to all the posts and disqus comment count
-projects  --- based on default, includes all projects in _projects and a local nav list of categories if more
+1. default   --- includes head, globalnav, footer, header
+2. post      --- based on default, includes post title and disqus support
+3. blog      --- based on default, includes all posts in _posts, a local nav list to all the posts and disqus comment count
+4. projects  --- based on default, includes all projects in _projects and a local nav list of categories if more
 categories than three and/or a small screen display
 
 

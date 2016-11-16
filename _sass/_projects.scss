@@ -6,7 +6,6 @@
         margin: $center;
         margin-top: $base-sizing;
         clear: both;
-        overflow: auto;
 
         h2 {
             font-size: $base-font-size * 2.2;
@@ -20,6 +19,7 @@
 
             li {
                 display: block;
+                text-align: justify;
                 margin: $base-spacing;
                 padding: $base-spacing / 2 0;
                 border-bottom-style: ridge;
@@ -33,8 +33,14 @@
                 a {
                     display: block;
                     font-weight: bold;
-                    text-align: left;
+                    text-align: right;
                     padding-top: $base-spacing;
+                }
+
+                p:first-of-type {
+                    text-align: right;
+                    font-size: $small-font-size;
+                    font-style: italic;
                 }
 
                 a:hover, a:active, a:focus {
@@ -50,39 +56,41 @@
             }
 
             img {
-                float: right;
+                display: block;
+                margin: $center;
                 max-width: 12em;
                 height: auto;
                 padding: $base-spacing;
             }
+
         }
 
     }
 
-    section.three {
-        @extend section.many;
+        section.three {
+            @extend section.many;
 
-        width: $content-width / 3;
-        max-width: 30%;
-        float: left;
-        clear: none;
+            width: $content-width / 3;
+            max-width: 30%;
+            float: left;
+            clear: none;
 
-        ul {
-            border-right-style: ridge;
-            border-width: $border-width;
+            ul {
+                border-right-style: ridge;
+                border-width: $border-width;
 
-            a {
-                text-align: right;
+                a {
+                    text-align: right;
+                }
+            }
+
+        }
+
+        section.three:last-of-type {
+            ul {
+                border-right-style: none;
             }
         }
-
-    }
-
-    section.three:last-of-type {
-        ul {
-            border-right-style: none;
-        }
-    }
 
     section.two {
         @extend section.many;
@@ -121,10 +129,10 @@ nav.three, nav.many, nav.two {
     width: $content-width;
 
     li {
-        float: right;
-        padding: $base-spacing;
+            float: right;
+            padding: $base-spacing;
+        }
     }
-}
 
 nav.three, nav.two, nav.one {
     display: none;
