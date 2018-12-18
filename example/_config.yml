@@ -18,7 +18,7 @@
 title: your name - portfolio
 email: example@gmail.com
 description: This is a splendid website about me.
-url: "" # the base hostname & protocol for your site
+url: "https://theuggla.github.io/example" # the base hostname & protocol for your site
 author: Arthur Dent
 share_image: default.png
 background_image: default_rustic.jpg
