@@ -18,7 +18,7 @@
 title: your name - portfolio
 email: example@gmail.com
 description: This is a splendid website about me.
-url: "https://theuggla.github.io/example" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 author: Arthur Dent
 share_image: default.png
 background_image: default_rustic.jpg
@@ -41,12 +41,11 @@ upwork_userID:
 # Jekyll build settings
 markdown: kramdown
 permalink: pretty
+theme: lysande-jekyll-theme
 baseurl: ""
 exclude: 
    - Gemfile
    - Gemfile.lock
-   - lysande.gemspec
-   - README.md
 plugins: 
    - jekyll-seo-tag
 
@@ -65,15 +64,11 @@ defaults:
         layout: "default"
   -
      scope:
-        path: "_posts"
+        path: ""
         type: "posts"
      values:
         layout: "post"
-   -
-     scope:
-        path: "_projects"
-        type: "projects"
-     values:
-        layout: "project"
+
+
 
 
