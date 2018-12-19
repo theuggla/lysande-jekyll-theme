@@ -77,7 +77,7 @@ below) into your project.
 GitHub Pages has added [full support](https://github.com/blog/2464-use-any-theme-with-github-pages) 
 for any GitHub-hosted theme.
 
-1. Replace `gem "jekyll"` with:
+1. Replace `gem "lysande-jekyll-theme"` in your Gemfile with:
 
    ```ruby
    gem "github-pages", group: :jekyll_plugins
@@ -110,6 +110,7 @@ safely remove the following files and folders:
 - `README.md`
 - `screenshot.png`
 - `/example`
+- `Gemfile.lock`
 
 ## Upgrading
 
@@ -121,19 +122,19 @@ site and you should something similar to:
 
 ```
 <!--
-    Lysande Jekyll Theme 1.2.0
+    Lysande Jekyll Theme 1.0.0
     Copyright 2017-2018 Molly Arhammar - theuggla.github.io
     Free for personal and commercial use under the MIT license
     https://github.com/theuggla/lysande-jekyll-theme/blob/master/LICENSE
 -->
 ```
 
-At the top of every `.html` file, `/assets/css/main.css`, and `/assets/js/main.js`.
+At the top of every `.html` file and `/assets/main.css`.
 
 ### Ruby Gem
 
 Simply run `bundle update` if you're using Bundler (have a `Gemfile`) or `gem 
-update jekyll-theme-basically-basic` if you're not.
+update lysande-jekyll-theme` if you're not.
 
 ### Remote Theme
 
