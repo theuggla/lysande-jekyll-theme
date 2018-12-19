@@ -34,7 +34,7 @@ layout: default
     <section class="{{projects}}">
         <h2 id="{{category}}">{{category}}</h2>
         <ul>
-            {% for project in site.projects %}
+            {% for project in site.projects reversed %}
             {% if project.category contains category %}
             <li>
                 <h3>{{ project.title | escape }}</h3>
