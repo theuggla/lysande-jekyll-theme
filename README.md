@@ -13,6 +13,11 @@ a base for a portfolio site.
 - Disqus Comments
 - SEO best practices via [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/)
 
+[![Lysande live preview][2]][1]
+
+[1]: https://github.com/theuggla/lysande-jekyll-theme/
+[2]: https://github.com/theuggla/lysande-jekyll-theme/screenshot.png(live preview)
+
 ## Table of Contents
 
 1. [Installation](#installation)
