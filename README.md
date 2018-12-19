@@ -15,8 +15,12 @@ a base for a portfolio site.
 
 [![Lysande live preview][2]][1]
 
-[1]: https://github.com/theuggla/lysande-jekyll-theme/
+[1]: https://theuggla.github.io/example
 [2]: https://github.com/theuggla/lysande-jekyll-theme/blob/master/screenshot.png (live preview)
+
+[A live preview of the theme here](https://theuggla.github.io/example)  
+
+[The theme being used as the theme for my portfolio here](https://theuggla.github.io/)
 
 ## Table of Contents
 
