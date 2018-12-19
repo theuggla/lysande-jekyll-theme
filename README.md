@@ -265,7 +265,8 @@ good to go.
 Configuration of site-wide elements (`title`, `description`, 
 `author`, etc.) happens in your project's `_config.yml`. See the 
 [example configuration](example/_config.yml) in this repo for additional 
-reference.
+reference. The most important thing to note is that you will want to add `permalink: pretty` to 
+your `_config.yml` to keep the links working properly.
 
 |                    | Description                                                               |
 | ------------------ | ------------------------------------------------------------------------- |
