@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "lysande-jekyll-theme"
-  spec.version       = "3.1.0"
+  spec.version       = "3.2.0"
   spec.authors       = ["Molly Arhammar"]
   spec.email         = ["mollyarhammar@gmail.com"]
 
